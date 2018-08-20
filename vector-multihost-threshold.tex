@@ -1,0 +1,104 @@
+\documentclass[3p,sort&compress,times]{elsarticle}
+\usepackage[USenglish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ragged2e}
+\usepackage{bbm}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage{proba}
+\usepackage{cleveref}
+\usepackage{booktabs}
+\usepackage{caption,subfig}
+\usepackage{txfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem{assumption}{Assumption}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\DeclareRobustCommand{\1}[1]{\ensuremath \mathbbm{1}_{\{#1\}}}
+\journal{Physica A}
+\captionsetup[subfigure]{style=default, 
+	margin=10pt, parskip=0pt, hangindent=0pt, indention=5pt,
+	singlelinecheck=false}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\modulolinenumbershttps[1]
+\begin{document}
+	\begin{frontmatter}
+		\title{
+			Threshold behavior for a of a Multi-Host Model with Vector Transmission
+		}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\author[add:unison]{%
+			Manuel Adrian Acu\~na-Zegarra
+		}%
+		\ead{m.adrian.a.z@gmail.com}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\author[add:conacyt_unison]{%
+			Sa\'ul D\'iaz-Infante
+			\corref{corresponding_author}
+		}%
+		\ead{
+			saul.diazinfante@unison.mx
+		}
+		\author[add:unison]{Daniel Olmos-Liceaga}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\address[add:unison]{
+			Departamento de Matem\'aticas, Universidad de Sonora, Boulevard
+			Luis Encinas y Rosales S/N, Col. Centro, Hermosillo, Sonora, 
+			M\'exico.
+		}
+		\address[add:conacyt_unison]{
+			CONACYT-Universidad de Sonora, 
+			Departamento de Matem\'aticas, Boulevard Luis Encinas y 
+			Rosales S/N, 83000, Hermosillo, Sonora, M\'exico.
+		}
+		\cortext[corresponding_author]{Corresponding author}
+		\begin{abstract}
+		\end{abstract}
+		\begin{keyword}
+			Multi-host,
+			vector transmission,
+			persistence,
+			extinction,
+			stochastic 
+			perturbation.
+		\end{keyword}
+	\end{frontmatter}
+	%\linenumbers
+	\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{
+		Stochastic Vector-Multi-Host 
+		Model
+	}\label{sec:StochasticMultiHostModel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{
+		Extinction
+	}\label{sec:Extinction}
+	\section{Stochastic Persistence}\label{sec:Persistence}
+	\section{Numerical Results}\label{sec:NumericalResults}
+	\section{Concluding Remarks}\label{sec:Conclusions}
+	\section{Acknowledgments}
+		This research was supported by the Consejo Nacional de Ciencia y Tecnolog\'ia (CONACYT).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\appendix
+	\renewcommand*{\thesection}{\appendixname~\Alph{section}}
+	\renewcommand{\thetheorem}{\Alph{section}.\arabic{theorem}}
+	\renewcommand{\thedefinition}{\Alph{section}.\arabic{definition}}
+	\section*{References}
+%		\bibliographystyle{model6-num-names}
+%		\bibliography{bibliography}
+\end{document}
